@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <center><b><h3>Multi-page Registration Form</h3></b></center>
+        <center><small>(Education Details)</small></center><br>
+        <form method="POST" action="page3.html">
+            <label for="">HSC Institution name</label><span class="star">*</span><br>
+            <input type="text" name="space" onkeydown="SpaceBlock()" required><br>
+
+            <label for="">HSC Board</label><span class="star">*</span><br>
+            <input type="radio" name="hscboard" required value="cbsc">CBSC<br>
+            <input type="radio" name="hscboard" value="icsc">ICSC<br>
+            <input type="radio" name="hscboard" value="stateboard">State board<br><br>
+
+            <label for="">Score in HSC in percentage</label><span class="star">*</span><br>
+            <input type="number" required><br>
+
+            <label for="">SSC Institution name</label><span class="star">*</span><br>
+            <input type="text" name="space" onkeydown="SpaceBlock()" required><br>
+
+            <label for="">SSC Board</label><span class="star">*</span><br>
+            <input type="radio" name="sscboard" required value="cbsc">CBSC<br>
+            <input type="radio" name="sscboard" value="icsc">ICSC<br>
+            <input type="radio" name="sscboard" value="stateboard">State board<br><br>
+
+            <label for="">Score in SSC in percentage</label><span class="star">*</span><br>
+            <input type="number" required><br>
+
+            <label for="">Currently Pursuing</label><span class="star">*</span><br>
+            <input type="text" name="space" onkeydown="SpaceBlock()" required><br>
+
+            <label for="">Current educational Instituion name</label><span class="star">*</span><br>
+            <input type="text" name="space" onkeydown="SpaceBlock()" required><br>
+
+            <label for="">Overall percentage</label><span class="star">*</span><br>
+            <input type="number" required><br>
+            
+            <label for="">Current backlog if any</label>
+            <input type="number">
+
+            <input type="submit"  value="Next">
+        </form>
+        <script src="page2.js"></script>
+    </div>
+</body>
+</html>

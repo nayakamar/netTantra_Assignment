@@ -1,0 +1,34 @@
+.container{
+    background-color: #E0FFFF;
+    padding: 10px;
+    font-family: sans-serif;
+    margin: auto;
+    width: 750px;
+    border-radius: 5px;
+}
+.name-box{
+    display: flex;
+}
+.star{
+    color: rgb(255, 0, 0);
+}
+
+input[type=text], select, input[type=email], input[type=number], input[type=date]{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid olive;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    margin-bottom: 16px;
+}
+input[type=submit]{
+    padding: 4px;
+    cursor: pointer;
+    color: green;
+    border: 1.5px solid gray;
+    position:relative;
+    bottom: auto;
+    left: 94%;
+    
+}

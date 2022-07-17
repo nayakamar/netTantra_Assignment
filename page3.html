@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Documents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <center><b><h3>Multi-page Registration Form</h3></b></center>
+        <center><small>(Upload Documents)</small></center><br>
+        <form action="" name="myForm" onsubmit="return sizeValidation()">
+            <label for="">Recent Passport Sized Photograph</label><span>(image size less than 4MB)</span><span class="star">*</span><br><br>
+            <span>Browse a file </span><input type="file" accept="image/*" required name="passport-img"><br><br>
+
+            <label for="">HSC mark sheet</label><span>(image, PDF or docs size less than 4MB)</span><span class="star">*</span><br><br>
+            <span>Browse a file </span><input type="file" accept="image/*, .pdf, .doc" required name="hsc-marksheet"><br><br>
+
+            <label for="">SSC mark sheet</label><span>(image, PDF or docs size less than 4MB)</span><span class="star">*</span><br><br>
+            <span>Browse a file </span><input type="file" accept="image/*, .pdf, .doc" required name="ssc-marksheet"><br><br>
+
+            <label for="">All semesters mark sheet in a single PDF or docs</label><span>(file size less than 10MB)</span><span class="star">*</span><br><br>
+            <span>Browse a file </span><input type="file" accept=".pdf, .doc" required name="semester"><br><br>
+
+            <input type="submit" >
+        </form>
+
+        <script src="page3.js"></script>
+    </div>
+</body>
+</html>

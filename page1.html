@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <center><b><h3>Multi-page Registration Form</h2></b></center>
+        <center><small>(personal Details)</small></center>
+        <br>
+        <form method="POST"action="page2.html">
+            <label for="">Name</label><span class="star">*</span><br>
+            <div class="name-box">
+                
+                <input type="text" name="space" onkeydown="SpaceBlock()" required placeholder="First"> 
+                <input type="text" name="space" onkeydown="SpaceBlock()" required placeholder="Last"><br>
+                
+            </div>
+
+            <label for="">Date of Birth</label><span class="star">*</span><br>
+            <input type="date" required><br>
+
+            <label for="">Email</label><span class="star">*</span><br>
+            <input type="email" required><br>
+
+            <label for="">Father's name</label><span class="star">*</span><br>
+            <div class="name-box">
+                <input type="text"name="space" onkeydown="SpaceBlock()" required placeholder="First">
+                <input type="text"name="space" onkeydown="SpaceBlock()" required placeholder="Last"><br>
+            </div>
+
+            <label for="">Mother's name</label><span class="star">*</span><br>
+            <div class="name-box">
+                <input type="text"name="space" onkeydown="SpaceBlock()" required placeholder="First">
+                <input type="text"name="space" onkeydown="SpaceBlock()" required placeholder="Last"><br>
+            </div>
+
+            <label for="">Gender</label><span class="star">*</span><br>
+            <input type="radio" name="gender" required value="m">M<br>
+            <input type="radio" name="gender" value="f">F<br><br>
+
+            <label for="">Nationality</label><span class="star">*</span><br>
+            <input type="text" name="space" required onkeydown="SpaceBlock()"><br>
+
+            <label for="">Home Address</label><span class="star">*</span><br>
+            <input type="text" name="space" onkeydown="SpaceBlock()" placeholder="Street Address"><br>
+            <div class="name-box">
+                <input type="text" name="space" onkeydown="SpaceBlock()" placeholder="City">
+                <select name="country" required >
+                    <option value="" disabled selected>Country</option>
+                    <option value="india">INDIA</option>
+                    <option value="china">china</option>
+                    <option value="canada">canada</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Austrelia">Austrelia</option>
+                    <option value="Srilanka">Srilanka</option>
+                    <option value="other">Other</option>
+                </select><br>
+            </div>
+
+            <label for="">Telephone - Home</label><br>
+            <input type="text" pattern="[0-9]{10}" placeholder="### ### ####" 
+                title="Enter valid telephone number"><br>
+
+            <label for="">Telephone - Mobile</label><span class="star">*</span><br>
+            <input type="text" pattern="[0-9]{10}" required placeholder="### ### ####"
+                title="Enter valid telephone number">
+
+            <input type="submit" value="Next">
+        </form>
+       <script src="page1.js"></script>
+    </div>
+</body>
+</html>
